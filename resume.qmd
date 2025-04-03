@@ -1,0 +1,9 @@
+---
+title: "My Resume"
+---
+
+## Summary
+
+Brief overview of my professional experience, skills, and education.
+
+[Download CV (PDF)](AndreyPafnutyev_Resume.pdf)
