@@ -1,10 +1,28 @@
 ---
 title: "Contact"
+format:
+  html:
+    allow-html: true
 ---
 
 ## Let's Connect
 
-- **Email**: apafnutyev@example.com  
-- **LinkedIn**: (https://www.linkedin.com/in/andrey-pafnutyev/  
-- **GitHub #1**: 616797 (https://github.com/616797)
-- **GitHub #2**: PafnutyevA (ttps://github.com/PafnutyevA)
+<div class="contact-grid"> 
+
+<a href="mailto:apafnutyev@gmail.com" class="contact-icon" title="Email"> 
+    <i class="fas fa-envelope"></i> 
+</a> 
+
+<a href="https://www.linkedin.com/in/andrey-pafnutyev/" class="contact-icon" title="LinkedIn" target="_blank"> 
+    <i class="fab fa-linkedin"></i> 
+</a> 
+
+<a href="https://github.com/616797" class="contact-icon" title="GitHub #1" target="_blank"> 
+    <i class="fab fa-github"></i> 
+</a> 
+
+<a href="https://github.com/PafnutyevA" class="contact-icon" title="GitHub #2" target="_blank"> 
+    <i class="fab fa-github"></i> 
+</a> 
+
+</div>

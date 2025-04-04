@@ -1,0 +1,15 @@
+---
+title: "Data Manipulation & Visualization"
+date: 2025-02-16
+author: Andrey Pafnutyev
+description: CoLab analysis of holiday sales at Lobsterland.
+image: images/lobsterland.jpg
+categories: [analysis, report]
+---
+
+Here is an attached PDF report for this project:
+
+```{=html}
+<iframe src="../files/AndreyPafnutyev_DataVisualization.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;">
+  This browser does not support PDFs. <a href="../files/AndreyPafnutyev_DataVisualization.pdf">Download instead</a>.
+</iframe>

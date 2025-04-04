@@ -1,0 +1,15 @@
+---
+title: "NYC Real Estate Analysis"
+date: 2024-10-06
+author: Andrey Pafnutyev
+description: A PDF report analysig New York Real Estate.
+image: images/nyc.jpeg
+categories: [analysis, report]
+---
+
+Here is an attached PDF report for this project:
+
+```{=html}
+<iframe src="../files/AndreyPafnutyev_FlushingNorth_Analysis.pdf" width="100%" height="600px" style="border: none; border-radius: 8px;">
+  This browser does not support PDFs. <a href="../files/AndreyPafnutyev_FlushingNorth_Analysis.pdf">Download instead</a>.
+</iframe>

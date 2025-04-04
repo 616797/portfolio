@@ -1,18 +1,10 @@
 ---
 title: "Projects"
+listing:
+  type: default
+  contents: projects
+  sort: "date desc"
+  categories: true
+  fields: [title, description, date, author, categories, image]
+  image-align: right
 ---
-
-## Academic Projects
-
-### Project Title 1
-Short description.  
-![Alt text](path/to/image1.png)
-
-### Project Title 2
-Short description.  
-[Link to project or repo](#)
-
-## Personal Projects
-
-### Fun Project Name
-What it is, what tools I used, what I learned.

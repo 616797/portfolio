@@ -6,4 +6,17 @@ title: "My Resume"
 
 Brief overview of my professional experience, skills, and education.
 
+<iframe 
+  width="800" 
+  height="800" 
+  src="AndreyPafnutyev_Resume.pdf">
+</iframe>
+
 [Download CV (PDF)](AndreyPafnutyev_Resume.pdf)
+
+## Contact
+
+- 📧 **Email**: [apafnutyev@example.com](mailto:apafnutyev@example.com)  
+- 💼 **LinkedIn**: [linkedin.com/in/andrey-pafnutyev](https://www.linkedin.com/in/andrey-pafnutyev/)  
+- 🐙 **GitHub #1**: [616797](https://github.com/616797)  
+- 🐱 **GitHub #2**: [PafnutyevA](https://github.com/PafnutyevA)

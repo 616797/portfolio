@@ -1,18 +1,25 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "My Portfolio"
+  title: "Andrey Pafnutyev"
   navbar:
     left:
       - text: "About Me"
-        href: about.qmd
+        href: aboutme.qmd
       - text: "Projects"
         href: projects.qmd
       - text: "Resume"
         href: resume.qmd
       - text: "Contact"
         href: contact.qmd
+    right: 
+      - icon: github
+        href: https://github.com/616797
+      - icon: linkedin
+        href: https://www.linkedin.com/in/andrey-pafnutyev/
+
 
 format:
   html:
@@ -21,6 +28,9 @@ format:
       - brand
     css: styles.css
     toc: true
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 
 
