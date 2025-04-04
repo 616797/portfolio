@@ -6,10 +6,10 @@ title: "My Resume"
 <iframe 
   width="800" 
   height="800" 
-  src="AndreyPafnutyev_Resume.pdf">
+  src="files/AndreyPafnutyev_Resume.pdf">
 </iframe>
 
-[Download CV (PDF)](AndreyPafnutyev_Resume.pdf)
+[Download CV (PDF)](files/AndreyPafnutyev_Resume.pdf)
 
 ## Contact
 
