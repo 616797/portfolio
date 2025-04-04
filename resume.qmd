@@ -2,9 +2,6 @@
 title: "My Resume"
 ---
 
-## Summary
-
-Brief overview of my professional experience, skills, and education.
 
 <iframe 
   width="800" 

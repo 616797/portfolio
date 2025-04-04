@@ -2,7 +2,7 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "My Portfolio",
+    "title": "Andrey Pafnutyev",
     "section": "",
     "text": "title: “About” image: profile.jpg about: template: jolla links: - icon: twitter text: Twitter href: https://twitter.com - icon: linkedin text: LinkedIn href: https://linkedin.com - icon: github text: Github href: https://github.com\n\nAbout this blog"
   },
@@ -11,21 +11,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Data Manipulation & Visualization\n\n\n\n\n\n\nanalysis\n\n\nreport\n\n\n\nCoLab analysis of holiday sales at Lobsterland.\n\n\n\n\n\nFeb 16, 2025\n\n\nAndrey Pafnutyev\n\n\n\n\n\n\n\n\n\n\n\n\nNYC Real Estate Analysis\n\n\n\n\n\n\nanalysis\n\n\nreport\n\n\n\nA PDF report analysig New York Real Estate.\n\n\n\n\n\nOct 6, 2024\n\n\nAndrey Pafnutyev\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects.html#academic-projects",
-    "href": "projects.html#academic-projects",
-    "title": "Projects",
-    "section": "",
-    "text": "Short description.\n\n\n\n\nShort description.\nLink to project or repo"
-  },
-  {
-    "objectID": "projects.html#personal-projects",
-    "href": "projects.html#personal-projects",
-    "title": "Projects",
-    "section": "Personal Projects",
-    "text": "Personal Projects\n\nFun Project Name\nWhat it is, what tools I used, what I learned."
+    "text": "Here are some examples of my work. PLease reach out to me for full versions or further details!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLightcast Job Postings Analysis\n\n\n\n\n\n\ndata visualization\n\n\n\nVisual Reporting and Storytelling witht the help of Spark and Plotly.\n\n\n\n\n\nApr 4, 2025\n\n\nAndrey Pafnutyev\n\n\n\n\n\n\n\n\n\n\n\n\nData Manipulation & Visualization\n\n\n\n\n\n\nanalysis\n\n\nreport\n\n\n\nCoLab analysis of holiday sales at Lobsterland.\n\n\n\n\n\nFeb 16, 2025\n\n\nAndrey Pafnutyev\n\n\n\n\n\n\n\n\n\n\n\n\nNYC Real Estate Analysis\n\n\n\n\n\n\nanalysis\n\n\nreport\n\n\n\nA PDF report analysig New York Real Estate.\n\n\n\n\n\nOct 6, 2024\n\n\nAndrey Pafnutyev\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/nyc_real_estate.html",
@@ -35,25 +21,74 @@
     "text": "Here is an attached PDF report for this project:\n\nThis browser does not support PDFs. &lt;a href=\"../files/AndreyPafnutyev_FlushingNorth_Analysis.pdf\"&gt;Download instead&lt;/a&gt;."
   },
   {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "My Resume",
-    "section": "",
-    "text": "Brief overview of my professional experience, skills, and education.\n\n\nDownload CV (PDF)"
-  },
-  {
-    "objectID": "resume.html#summary",
-    "href": "resume.html#summary",
-    "title": "My Resume",
-    "section": "",
-    "text": "Brief overview of my professional experience, skills, and education.\n\n\nDownload CV (PDF)"
-  },
-  {
     "objectID": "projects/data_visualization.html",
     "href": "projects/data_visualization.html",
     "title": "Data Manipulation & Visualization",
     "section": "",
     "text": "Here is an attached PDF report for this project:\n\nThis browser does not support PDFs. &lt;a href=\"../files/AndreyPafnutyev_DataVisualization.pdf\"&gt;Download instead&lt;/a&gt;."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "My Resume",
+    "section": "",
+    "text": "Download CV (PDF)"
+  },
+  {
+    "objectID": "resume.html#contact",
+    "href": "resume.html#contact",
+    "title": "My Resume",
+    "section": "Contact",
+    "text": "Contact\n\n📧 Email: apafnutyev@example.com\n\n💼 LinkedIn: linkedin.com/in/andrey-pafnutyev\n\n🐙 GitHub #1: 616797\n\n🐱 GitHub #2: PafnutyevA"
+  },
+  {
+    "objectID": "projects/lightcast_analysis.html",
+    "href": "projects/lightcast_analysis.html",
+    "title": "Lightcast Job Postings Analysis",
+    "section": "",
+    "text": "Load and analyze the 2024 Lightcast dataset in Spark DataFrame.\nCreate visualizations using Plotly.\nExplore salary distributions, employment trends, and job postings.\nAnalyze skills in relation to NAICS/SOC/ONET codes and salaries.\nCustomize colors, fonts, and styles in all visualizations.\n\n\n\n\nGoal: Identify salary trends across different employment types.\n\n\n\n\nSalary Distribution by Employment Type\n\n\nThis box plot reveals the distribution of salaries across three different employment types: full-time (&gt; 32 hours), part-time/full-time, and part-time (≤ 32 hours). It shows that full-time positions generally offer higher median salaries and a wider range of salary values compared to part-time roles, which display more compact salary distributions and lower overall salary ranges.\n\n\n\n\nGoal: Compare salary variations across industries.\n\n\n\n\nSalary Distribution by Industry\n\n\nThis graph illustrates the average salary distribution across various industries like Information and Accommodation tend to offer higher average salaries. Sectors Public Administration and Educational Services have lower average salaries.\n\n\n\n\nGoal: Analyze how job postings fluctuate over time.\n\n\n\n\nSalary Distribution by Industry\n\n\nThis line chart shows the fluctuations in the number of job postings in 2024 between May and September, indicating a highly variable job market with peaks that suggest seasonal or periodic changes in job availability. The most significant spikes and drops highlight periods of either increased hiring activity or possible data collection anomalies, emphasizing the need for further analysis to understand these patterns better.\n\n\n\n\nGoal: Identify the most frequently posted job titles.\n\n\n\n\nSalary Distribution by Industry\n\n\nThis bar chart reveals the top 10 job titles by count, indicating that Data Analyst is the most frequently posted job title by a significant margin. This might underscore the critical importance of data skills in the current job market.\n\n\n\n\nGoal: Compare the proportion of remote and on-site job postings.\n\n\n\n\nSalary Distribution by Industry\n\n\nThis pie chart shows that a vast majority of job postings (78.6%), are remote positions. Non-remote and hybrid remote job postings represent a smaller fraction, with non-remote jobs accounting for 7.13% and hybrid remote jobs making up 14.2%.\n\n\n\n\nGoal: Analyze how salaries differ across ONET occupation types.\n\n\n\n\nSalary Distribution by Industry\n\n\nThis bubble chart displays the ONET occupation of Business Intelligence Analysts, revealing a median salary of $116,300. The size of the bubble indicates 72476 job postings, highlighting the significant demand for this role in the job market.\n\n\n\n\n\n\n\nThe scatter plot shows the relationship between maximum years of experience and average salary for employees with a bachelor’s degree or less. We can observe a wide range of salaries for different experience levels, indicating that salary levels in this group can be significantly influenced by factors other than experience. Notably, several occupations cluster around certain salary ranges regardless of experience, suggesting that there are industry-specific salary norms.\n\n\nThe histogram for the level of bachelor’s degree or lower shows a distinct spike around the $100,000 mark, indicating the overall average salary in this group. The presence of a small number of outliers exceeding 300 thousand indicates that exceptionally high salaries in this educational group are rare.\n\n\n\n\n\nFor those with a master’s or PhD, the scatter plot shows that educational level does not necessarily correlate with higher starting salaries, as can be seen by the concentration of data points below the 100k salary mark in different years of experience. However, there is a pattern where salary generally increases with experience, though with less variability compared to those with a bachelor’s degree or lower.\n\n\nThe histogram for people with a master’s or PhD shows a more even range of salaries, with a notable peak just above $100,000. This suggests that while higher education can lead to higher earning potential, the salary spread is wider, showing the diversity of roles and industries that people with higher education can perform.\n\n\n\n\n\n\n\n\nThis scatter plot shows the average salary of remote workers with different lengths of service. It demonstrates a wide range of salary levels, with some salary ranges clustered around specific roles, suggesting that remote working opportunities can offer competitive salaries for a variety of positions. A notable finding is that salary does not show a consistent increase with increasing experience, suggesting that other factors may also play an important role.\n\n\nThe histogram for remote workers shows a pronounced peak around the 100k mark, indicating the overall salary level among remote positions. The distribution is quite narrow, suggesting that most remote positions are centered around this salary level, with few offering significantly higher salaries.\n\n\n\n\n\nThe scatter plot illustrates the distribution of salaries for employees in hybrid roles based on experience. Unlike fully remote positions, hybrid roles show a more even distribution of salaries across experience levels, with less concentration at the lower end of the salary range, suggesting potentially better career progression.\n\n\nThe histogram for hybrid workers shows a major concentration of salaries between 50k and 100k, with a sharp peak around 100k. This suggests that while hybrid roles are often found in this salary range, there is less variation in compensation compared to fully remote positions.\n\n\n\n\n\nThe scatter plot for on-site workers shows a rich clustering of salaries for different experience levels, suggesting that on-site jobs offer a wider range of salaries than remote and hybrid positions. The distribution shows no clear correlation between years of experience and salary level, suggesting that on-site salaries may be more dependent on job specifics or other factors.\n\n\nThe graph shows that mostly all employees work in the neighborhood of $100,000, like remote employees, but there are some higher salaries. The presence of salaries in a wider range confirms the variety of compensation that onsite roles can offer."
+  },
+  {
+    "objectID": "projects/lightcast_analysis.html#salary-distribution-by-employment-type",
+    "href": "projects/lightcast_analysis.html#salary-distribution-by-employment-type",
+    "title": "Lightcast Job Postings Analysis",
+    "section": "",
+    "text": "Goal: Identify salary trends across different employment types.\n\n\n\n\nSalary Distribution by Employment Type\n\n\nThis box plot reveals the distribution of salaries across three different employment types: full-time (&gt; 32 hours), part-time/full-time, and part-time (≤ 32 hours). It shows that full-time positions generally offer higher median salaries and a wider range of salary values compared to part-time roles, which display more compact salary distributions and lower overall salary ranges."
+  },
+  {
+    "objectID": "projects/lightcast_analysis.html#salary-distribution-by-industry",
+    "href": "projects/lightcast_analysis.html#salary-distribution-by-industry",
+    "title": "Lightcast Job Postings Analysis",
+    "section": "",
+    "text": "Goal: Compare salary variations across industries.\n\n\n\n\nSalary Distribution by Industry\n\n\nThis graph illustrates the average salary distribution across various industries like Information and Accommodation tend to offer higher average salaries. Sectors Public Administration and Educational Services have lower average salaries."
+  },
+  {
+    "objectID": "projects/lightcast_analysis.html#job-posting-trends-over-time",
+    "href": "projects/lightcast_analysis.html#job-posting-trends-over-time",
+    "title": "Lightcast Job Postings Analysis",
+    "section": "",
+    "text": "Goal: Analyze how job postings fluctuate over time.\n\n\n\n\nSalary Distribution by Industry\n\n\nThis line chart shows the fluctuations in the number of job postings in 2024 between May and September, indicating a highly variable job market with peaks that suggest seasonal or periodic changes in job availability. The most significant spikes and drops highlight periods of either increased hiring activity or possible data collection anomalies, emphasizing the need for further analysis to understand these patterns better."
+  },
+  {
+    "objectID": "projects/lightcast_analysis.html#top-10-job-titles-by-count",
+    "href": "projects/lightcast_analysis.html#top-10-job-titles-by-count",
+    "title": "Lightcast Job Postings Analysis",
+    "section": "",
+    "text": "Goal: Identify the most frequently posted job titles.\n\n\n\n\nSalary Distribution by Industry\n\n\nThis bar chart reveals the top 10 job titles by count, indicating that Data Analyst is the most frequently posted job title by a significant margin. This might underscore the critical importance of data skills in the current job market."
+  },
+  {
+    "objectID": "projects/lightcast_analysis.html#remote-vs-on-site-job-postings",
+    "href": "projects/lightcast_analysis.html#remote-vs-on-site-job-postings",
+    "title": "Lightcast Job Postings Analysis",
+    "section": "",
+    "text": "Goal: Compare the proportion of remote and on-site job postings.\n\n\n\n\nSalary Distribution by Industry\n\n\nThis pie chart shows that a vast majority of job postings (78.6%), are remote positions. Non-remote and hybrid remote job postings represent a smaller fraction, with non-remote jobs accounting for 7.13% and hybrid remote jobs making up 14.2%."
+  },
+  {
+    "objectID": "projects/lightcast_analysis.html#salary-analysis-by-onet-occupation-type-bubble-chart",
+    "href": "projects/lightcast_analysis.html#salary-analysis-by-onet-occupation-type-bubble-chart",
+    "title": "Lightcast Job Postings Analysis",
+    "section": "",
+    "text": "Goal: Analyze how salaries differ across ONET occupation types.\n\n\n\n\nSalary Distribution by Industry\n\n\nThis bubble chart displays the ONET occupation of Business Intelligence Analysts, revealing a median salary of $116,300. The size of the bubble indicates 72476 job postings, highlighting the significant demand for this role in the job market."
   },
   {
     "objectID": "aboutme.html",
@@ -70,11 +105,11 @@
     "text": "I have experience with CRM systems and user training. I can structure data, prepare documentation and analytics to help optimize processes. I am constantly striving to evolve, learn new methods and technologies for working with data, which allows me to adapt to new tasks and quickly master new tools."
   },
   {
-    "objectID": "aboutme.html#interests",
-    "href": "aboutme.html#interests",
+    "objectID": "aboutme.html#career-interests",
+    "href": "aboutme.html#career-interests",
     "title": "About Me",
-    "section": "Interests",
-    "text": "Interests\nOver the past three years of professional working experience, I learned and mastered my information technology and research skills, focusing on data collection and aggregation in healthcare-related fields. This hands-on experience has been challenging and rewarding, pushing me to innovate and excel in IT, marketing analysis, tax reporting and healthcare data management. Leading and improving Affordable Care Act delivery, and compliance packages through efficient utilization of updated data management tools, as a top 5% implementation and data manager at the certified member of Women’s Business Enterprise National Council (WBENC) & a leading specialist in ACA reporting and compliance company, BenefitScape, I developed passion for healthcare equality and access data analytics projects."
+    "section": "Career Interests",
+    "text": "Career Interests\nOver the past three years of professional working experience, I learned and mastered my information technology and research skills, focusing on data collection and aggregation in healthcare-related fields. This hands-on experience has been challenging and rewarding, pushing me to innovate and excel in IT, marketing analysis, tax reporting and healthcare data management. Leading and improving Affordable Care Act delivery, and compliance packages through efficient utilization of updated data management tools, as a top 5% implementation and data manager at the certified member of Women’s Business Enterprise National Council (WBENC) & a leading specialist in ACA reporting and compliance company, BenefitScape, I developed passion for healthcare equality and access data analytics projects."
   },
   {
     "objectID": "aboutme.html#career-goals",
@@ -86,36 +121,29 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "My Portfolio",
+    "title": "Welcome",
     "section": "",
-    "text": "Welcome to my portfolio, built with Quarto!\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "👋 Hi, I’m Andrey Pafnutyev\nData analyst • Curious mind • Lifelong learner\nWelcome to my portfolio! Here, you’ll find highlights of my work, research projects, professional experience, and ways to connect."
   },
   {
-    "objectID": "aboutme.html#career-interests",
-    "href": "aboutme.html#career-interests",
-    "title": "About Me",
-    "section": "Career Interests",
-    "text": "Career Interests\nOver the past three years of professional working experience, I learned and mastered my information technology and research skills, focusing on data collection and aggregation in healthcare-related fields. This hands-on experience has been challenging and rewarding, pushing me to innovate and excel in IT, marketing analysis, tax reporting and healthcare data management. Leading and improving Affordable Care Act delivery, and compliance packages through efficient utilization of updated data management tools, as a top 5% implementation and data manager at the certified member of Women’s Business Enterprise National Council (WBENC) & a leading specialist in ACA reporting and compliance company, BenefitScape, I developed passion for healthcare equality and access data analytics projects."
+    "objectID": "index.html#what-im-about",
+    "href": "index.html#what-im-about",
+    "title": "Welcome",
+    "section": "What I’m About",
+    "text": "What I’m About\nI’m passionate about uncovering insights from data and turning them into clear, actionable stories.\nMy work blends statistics, visualization, and a healthy dose of curiosity.\nWhether it’s academic research or a side project on the weekend, I love building things that help optimize processes and operations."
   },
   {
-    "objectID": "resume.html#summary-1",
-    "href": "resume.html#summary-1",
-    "title": "My Resume",
-    "section": "Summary",
-    "text": "Summary\n\n📧 Email: apafnutyev@example.com\n\n💼 LinkedIn: linkedin.com/in/andrey-pafnutyev\n\n🐙 GitHub #1: 616797\n\n🐱 GitHub #2: PafnutyevA"
+    "objectID": "projects/lightcast_analysis.html#salary-by-education-level",
+    "href": "projects/lightcast_analysis.html#salary-by-education-level",
+    "title": "Lightcast Job Postings Analysis",
+    "section": "",
+    "text": "The scatter plot shows the relationship between maximum years of experience and average salary for employees with a bachelor’s degree or less. We can observe a wide range of salaries for different experience levels, indicating that salary levels in this group can be significantly influenced by factors other than experience. Notably, several occupations cluster around certain salary ranges regardless of experience, suggesting that there are industry-specific salary norms.\n\n\nThe histogram for the level of bachelor’s degree or lower shows a distinct spike around the $100,000 mark, indicating the overall average salary in this group. The presence of a small number of outliers exceeding 300 thousand indicates that exceptionally high salaries in this educational group are rare.\n\n\n\n\n\nFor those with a master’s or PhD, the scatter plot shows that educational level does not necessarily correlate with higher starting salaries, as can be seen by the concentration of data points below the 100k salary mark in different years of experience. However, there is a pattern where salary generally increases with experience, though with less variability compared to those with a bachelor’s degree or lower.\n\n\nThe histogram for people with a master’s or PhD shows a more even range of salaries, with a notable peak just above $100,000. This suggests that while higher education can lead to higher earning potential, the salary spread is wider, showing the diversity of roles and industries that people with higher education can perform."
   },
   {
-    "objectID": "resume.html#contact",
-    "href": "resume.html#contact",
-    "title": "My Resume",
-    "section": "Contact",
-    "text": "Contact\n\n📧 Email: apafnutyev@example.com\n\n💼 LinkedIn: linkedin.com/in/andrey-pafnutyev\n\n🐙 GitHub #1: 616797\n\n🐱 GitHub #2: PafnutyevA"
-  },
-  {
-    "objectID": "resume.html#contact-me",
-    "href": "resume.html#contact-me",
-    "title": "My Resume",
-    "section": "Contact Me",
-    "text": "Contact Me\n\n📧 Email: apafnutyev@example.com\n\n💼 LinkedIn: linkedin.com/in/andrey-pafnutyev\n\n🐙 GitHub #1: 616797\n\n🐱 GitHub #2: PafnutyevA"
+    "objectID": "projects/lightcast_analysis.html#salary-by-remote-work-type",
+    "href": "projects/lightcast_analysis.html#salary-by-remote-work-type",
+    "title": "Lightcast Job Postings Analysis",
+    "section": "",
+    "text": "This scatter plot shows the average salary of remote workers with different lengths of service. It demonstrates a wide range of salary levels, with some salary ranges clustered around specific roles, suggesting that remote working opportunities can offer competitive salaries for a variety of positions. A notable finding is that salary does not show a consistent increase with increasing experience, suggesting that other factors may also play an important role.\n\n\nThe histogram for remote workers shows a pronounced peak around the 100k mark, indicating the overall salary level among remote positions. The distribution is quite narrow, suggesting that most remote positions are centered around this salary level, with few offering significantly higher salaries.\n\n\n\n\n\nThe scatter plot illustrates the distribution of salaries for employees in hybrid roles based on experience. Unlike fully remote positions, hybrid roles show a more even distribution of salaries across experience levels, with less concentration at the lower end of the salary range, suggesting potentially better career progression.\n\n\nThe histogram for hybrid workers shows a major concentration of salaries between 50k and 100k, with a sharp peak around 100k. This suggests that while hybrid roles are often found in this salary range, there is less variation in compensation compared to fully remote positions.\n\n\n\n\n\nThe scatter plot for on-site workers shows a rich clustering of salaries for different experience levels, suggesting that on-site jobs offer a wider range of salaries than remote and hybrid positions. The distribution shows no clear correlation between years of experience and salary level, suggesting that on-site salaries may be more dependent on job specifics or other factors.\n\n\nThe graph shows that mostly all employees work in the neighborhood of $100,000, like remote employees, but there are some higher salaries. The presence of salaries in a wider range confirms the variety of compensation that onsite roles can offer."
   }
 ]

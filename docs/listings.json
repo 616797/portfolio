@@ -2,6 +2,7 @@
   {
     "listing": "/projects.html",
     "items": [
+      "/projects/lightcast_analysis.html",
       "/projects/data_visualization.html",
       "/projects/nyc_real_estate.html"
     ]

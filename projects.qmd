@@ -8,3 +8,5 @@ listing:
   fields: [title, description, date, author, categories, image]
   image-align: right
 ---
+
+Here are some examples of my work. PLease reach out to me for full versions or further details! 

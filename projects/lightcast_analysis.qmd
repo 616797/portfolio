@@ -1,0 +1,157 @@
+---
+title: "Lightcast Job Postings Analysis"
+date: 2025-04-04
+author: Andrey Pafnutyev
+description: Visual Reporting and Storytelling witht the help of Spark and Plotly. 
+image: images/lightcast_logo.jpg
+categories: [data visualization]
+---
+
+# Analysis Objectives {.unnumbered}
+
+1. Load and analyze the **2024 Lightcast dataset** in **Spark DataFrame**.
+2. Create **visualizations** using **Plotly**.
+3. Explore **salary distributions, employment trends, and job postings**.
+4. Analyze **skills in relation to NAICS/SOC/ONET codes and salaries**.
+5. Customize **colors, fonts, and styles** in all visualizations.
+
+## Salary Distribution by Employment Type
+- Goal: Identify salary trends across different employment types.
+
+![Salary Distribution by Employment Type](images/boxplot.svg)
+
+This box plot reveals the distribution of salaries across three different employment types: full-time (> 32 hours), part-time/full-time, and part-time (≤ 32 hours). It shows that full-time positions generally offer higher median salaries and a wider range of salary values compared to part-time roles, which display more compact salary distributions and lower overall salary ranges.
+
+## Salary Distribution by Industry
+- Goal: Compare salary variations across industries.
+
+![Salary Distribution by Industry](images/salarydist.svg)
+
+This graph illustrates the average salary distribution across various industries like Information and Accommodation tend to offer higher average salaries. Sectors Public Administration and Educational Services have lower average salaries.
+
+## Job Posting Trends Over Time
+- Goal: Analyze how job postings fluctuate over time.
+
+![Salary Distribution by Industry](images/trends.svg)
+
+This line chart shows the fluctuations in the number of job postings in 2024 between May and September, indicating a highly variable job market with peaks that suggest seasonal or periodic changes in job availability. The most significant spikes and drops highlight periods of either increased hiring activity or possible data collection anomalies, emphasizing the need for further analysis to understand these patterns better.
+
+## Top 10 Job Titles by Count
+- Goal: Identify the most frequently posted job titles.
+
+![Salary Distribution by Industry](images/top10titles.svg)
+
+This bar chart reveals the top 10 job titles by count, indicating that Data Analyst is the most frequently posted job title by a significant margin. This might underscore the critical importance of data skills in the current job market.
+
+
+## Remote vs On-Site Job Postings
+- Goal: Compare the proportion of remote and on-site job postings.
+
+![Salary Distribution by Industry](images/toptitles.svg)
+
+This pie chart shows that a vast majority of job postings (78.6%), are remote positions. Non-remote and hybrid remote job postings represent a smaller fraction, with non-remote jobs accounting for 7.13% and hybrid remote jobs making up 14.2%.
+
+## Salary Analysis by ONET Occupation Type (Bubble Chart)
+- Goal: Analyze how salaries differ across ONET occupation types.
+
+![Salary Distribution by Industry](images/salary.svg)
+
+This bubble chart displays the ONET occupation of Business Intelligence Analysts, revealing a median salary of $116,300. The size of the bubble indicates 72476 job postings, highlighting the significant demand for this role in the job market.
+
+
+## Salary by Education Level
+
+### Bachelor’s or Lower
+
+<iframe src="images/scatter_bachelor’s_or_lower.html"
+        width="100%"
+        height="600px"
+        style="border: none; border-radius: 8px;">
+</iframe>
+
+The scatter plot shows the relationship between maximum years of experience and average salary for employees with a bachelor's degree or less. We can observe a wide range of salaries for different experience levels, indicating that salary levels in this group can be significantly influenced by factors other than experience. Notably, several occupations cluster around certain salary ranges regardless of experience, suggesting that there are industry-specific salary norms.
+
+
+<iframe src="images/histogram_bachelor’s_or_lower.html"
+        width="100%"
+        height="600px"
+        style="border: none; border-radius: 8px;">
+</iframe>
+
+The histogram for the level of bachelor's degree or lower shows a distinct spike around the $100,000 mark, indicating the overall average salary in this group. The presence of a small number of outliers exceeding 300 thousand indicates that exceptionally high salaries in this educational group are rare.
+
+### Master’s or PhD
+
+<iframe src="images/scatter_master’s_or_phd.html"
+        width="100%"
+        height="600px"
+        style="border: none; border-radius: 8px;">
+</iframe>
+
+For those with a master's or PhD, the scatter plot shows that educational level does not necessarily correlate with higher starting salaries, as can be seen by the concentration of data points below the 100k salary mark in different years of experience. However, there is a pattern where salary generally increases with experience, though with less variability compared to those with a bachelor's degree or lower.
+
+<iframe src="images/histogram_master’s_or_phd.html"
+        width="100%"
+        height="600px"
+        style="border: none; border-radius: 8px;">
+</iframe>
+
+The histogram for people with a master's or PhD shows a more even range of salaries, with a notable peak just above $100,000. This suggests that while higher education can lead to higher earning potential, the salary spread is wider, showing the diversity of roles and industries that people with higher education can perform.
+
+## Salary by Remote Work Type
+
+### Remote Analysis
+
+<iframe src="images/scatter_remote.html"
+        width="100%"
+        height="600px"
+        style="border: none; border-radius: 8px;">
+</iframe>
+
+This scatter plot shows the average salary of remote workers with different lengths of service. It demonstrates a wide range of salary levels, with some salary ranges clustered around specific roles, suggesting that remote working opportunities can offer competitive salaries for a variety of positions. A notable finding is that salary does not show a consistent increase with increasing experience, suggesting that other factors may also play an important role.
+
+<iframe src="images/histogram_remote.html"
+        width="100%"
+        height="600px"
+        style="border: none; border-radius: 8px;">
+</iframe>
+
+The histogram for remote workers shows a pronounced peak around the 100k mark, indicating the overall salary level among remote positions. The distribution is quite narrow, suggesting that most remote positions are centered around this salary level, with few offering significantly higher salaries.
+
+
+### Hybrid Analysis
+
+<iframe src="images/scatter_hybrid.html"
+        width="100%"
+        height="600px"
+        style="border: none; border-radius: 8px;">
+</iframe>
+
+ The scatter plot illustrates the distribution of salaries for employees in hybrid roles based on experience. Unlike fully remote positions, hybrid roles show a more even distribution of salaries across experience levels, with less concentration at the lower end of the salary range, suggesting potentially better career progression.
+
+<iframe src="images/histogram_hybrid.html"
+        width="100%"
+        height="600px"
+        style="border: none; border-radius: 8px;">
+</iframe>
+
+The histogram for hybrid workers shows a major concentration of salaries between 50k and 100k, with a sharp peak around 100k. This suggests that while hybrid roles are often found in this salary range, there is less variation in compensation compared to fully remote positions.
+
+
+### Onsite Analysis
+
+<iframe src="images/scatter_onsite.html"
+        width="100%"
+        height="600px"
+        style="border: none; border-radius: 8px;">
+</iframe>
+
+The scatter plot for on-site workers shows a rich clustering of salaries for different experience levels, suggesting that on-site jobs offer a wider range of salaries than remote and hybrid positions. The distribution shows no clear correlation between years of experience and salary level, suggesting that on-site salaries may be more dependent on job specifics or other factors.
+
+<iframe src="images/histogram_onsite.html"
+        width="100%"
+        height="600px"
+        style="border: none; border-radius: 8px;">
+</iframe>
+
+The graph shows that mostly all employees work in the neighborhood of $100,000, like remote employees, but there are some higher salaries. The presence of salaries in a wider range confirms the variety of compensation that onsite roles can offer.

@@ -1,7 +1,19 @@
 ---
-title: "My Portfolio"
+title: "Welcome"
+format:
+  html:
+    toc: false
 ---
 
-Welcome to my portfolio, built with Quarto!
+<h1 class="typewriter">👋 Hi, I'm Andrey Pafnutyev</h1>
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<p class="subtitle">Data analyst • Curious mind • Lifelong learner</p>
+
+Welcome to my portfolio! Here, you’ll find highlights of my work, research projects, professional experience, and ways to connect.
+
+## What I'm About
+
+I'm passionate about uncovering insights from data and turning them into clear, actionable stories.  
+My work blends statistics, visualization, and a healthy dose of curiosity.
+
+Whether it’s academic research or a side project on the weekend, I love building things that help **optimize processes and operations**.
