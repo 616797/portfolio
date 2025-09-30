@@ -9,7 +9,7 @@ format:
 
 <div class="contact-grid"> 
 
-<a href="mailto:apafnutyev@gmail.com" class="contact-icon" title="Email"> 
+<a href="mailto:paf007@bu.edu" class="contact-icon" title="Email"> 
     <i class="fas fa-envelope"></i> 
 </a> 
 

@@ -11,7 +11,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Here are some examples of my work. PLease reach out to me for full versions or further details!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLightcast Job Postings Analysis\n\n\n\n\n\n\ndata visualization\n\n\n\nVisual Reporting and Storytelling witht the help of Spark and Plotly.\n\n\n\n\n\nApr 4, 2025\n\n\nAndrey Pafnutyev\n\n\n\n\n\n\n\n\n\n\n\n\nData Manipulation & Visualization\n\n\n\n\n\n\nanalysis\n\n\nreport\n\n\n\nCoLab analysis of holiday sales at Lobsterland.\n\n\n\n\n\nFeb 16, 2025\n\n\nAndrey Pafnutyev\n\n\n\n\n\n\n\n\n\n\n\n\nNYC Real Estate Analysis\n\n\n\n\n\n\nanalysis\n\n\nreport\n\n\n\nA PDF report analysig New York Real Estate.\n\n\n\n\n\nOct 6, 2024\n\n\nAndrey Pafnutyev\n\n\n\n\n\n\nNo matching items"
+    "text": "Here are some examples of my work. Please reach out to me for full versions or further details!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLightcast Job Postings Analysis\n\n\n\n\n\n\ndata visualization\n\n\n\nVisual Reporting and Storytelling witht the help of Spark and Plotly.\n\n\n\n\n\nApr 4, 2025\n\n\nAndrey Pafnutyev\n\n\n\n\n\n\n\n\n\n\n\n\nData Manipulation & Visualization\n\n\n\n\n\n\nanalysis\n\n\nreport\n\n\n\nCoLab analysis of holiday sales at Lobsterland.\n\n\n\n\n\nFeb 16, 2025\n\n\nAndrey Pafnutyev\n\n\n\n\n\n\n\n\n\n\n\n\nNYC Real Estate Analysis\n\n\n\n\n\n\nanalysis\n\n\nreport\n\n\n\nA PDF report analysig New York Real Estate.\n\n\n\n\n\nOct 6, 2024\n\n\nAndrey Pafnutyev\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/nyc_real_estate.html",
@@ -39,7 +39,7 @@
     "href": "resume.html#contact",
     "title": "My Resume",
     "section": "Contact",
-    "text": "Contact\n\n📧 Email: apafnutyev@example.com\n\n💼 LinkedIn: linkedin.com/in/andrey-pafnutyev\n\n🐙 GitHub #1: 616797\n\n🐱 GitHub #2: PafnutyevA"
+    "text": "Contact\n\n📧 Email: paf007@bu.edu\n\n💼 LinkedIn: linkedin.com/in/andrey-pafnutyev\n\n🐙 GitHub #1: 616797\n\n🐱 GitHub #2: PafnutyevA"
   },
   {
     "objectID": "projects/lightcast_analysis.html",
@@ -91,6 +91,20 @@
     "text": "Goal: Analyze how salaries differ across ONET occupation types.\n\n\n\n\nSalary Distribution by Industry\n\n\nThis bubble chart displays the ONET occupation of Business Intelligence Analysts, revealing a median salary of $116,300. The size of the bubble indicates 72476 job postings, highlighting the significant demand for this role in the job market."
   },
   {
+    "objectID": "projects/lightcast_analysis.html#salary-by-education-level",
+    "href": "projects/lightcast_analysis.html#salary-by-education-level",
+    "title": "Lightcast Job Postings Analysis",
+    "section": "",
+    "text": "The scatter plot shows the relationship between maximum years of experience and average salary for employees with a bachelor’s degree or less. We can observe a wide range of salaries for different experience levels, indicating that salary levels in this group can be significantly influenced by factors other than experience. Notably, several occupations cluster around certain salary ranges regardless of experience, suggesting that there are industry-specific salary norms.\n\n\nThe histogram for the level of bachelor’s degree or lower shows a distinct spike around the $100,000 mark, indicating the overall average salary in this group. The presence of a small number of outliers exceeding 300 thousand indicates that exceptionally high salaries in this educational group are rare.\n\n\n\n\n\nFor those with a master’s or PhD, the scatter plot shows that educational level does not necessarily correlate with higher starting salaries, as can be seen by the concentration of data points below the 100k salary mark in different years of experience. However, there is a pattern where salary generally increases with experience, though with less variability compared to those with a bachelor’s degree or lower.\n\n\nThe histogram for people with a master’s or PhD shows a more even range of salaries, with a notable peak just above $100,000. This suggests that while higher education can lead to higher earning potential, the salary spread is wider, showing the diversity of roles and industries that people with higher education can perform."
+  },
+  {
+    "objectID": "projects/lightcast_analysis.html#salary-by-remote-work-type",
+    "href": "projects/lightcast_analysis.html#salary-by-remote-work-type",
+    "title": "Lightcast Job Postings Analysis",
+    "section": "",
+    "text": "This scatter plot shows the average salary of remote workers with different lengths of service. It demonstrates a wide range of salary levels, with some salary ranges clustered around specific roles, suggesting that remote working opportunities can offer competitive salaries for a variety of positions. A notable finding is that salary does not show a consistent increase with increasing experience, suggesting that other factors may also play an important role.\n\n\nThe histogram for remote workers shows a pronounced peak around the 100k mark, indicating the overall salary level among remote positions. The distribution is quite narrow, suggesting that most remote positions are centered around this salary level, with few offering significantly higher salaries.\n\n\n\n\n\nThe scatter plot illustrates the distribution of salaries for employees in hybrid roles based on experience. Unlike fully remote positions, hybrid roles show a more even distribution of salaries across experience levels, with less concentration at the lower end of the salary range, suggesting potentially better career progression.\n\n\nThe histogram for hybrid workers shows a major concentration of salaries between 50k and 100k, with a sharp peak around 100k. This suggests that while hybrid roles are often found in this salary range, there is less variation in compensation compared to fully remote positions.\n\n\n\n\n\nThe scatter plot for on-site workers shows a rich clustering of salaries for different experience levels, suggesting that on-site jobs offer a wider range of salaries than remote and hybrid positions. The distribution shows no clear correlation between years of experience and salary level, suggesting that on-site salaries may be more dependent on job specifics or other factors.\n\n\nThe graph shows that mostly all employees work in the neighborhood of $100,000, like remote employees, but there are some higher salaries. The presence of salaries in a wider range confirms the variety of compensation that onsite roles can offer."
+  },
+  {
     "objectID": "aboutme.html",
     "href": "aboutme.html",
     "title": "About Me",
@@ -131,19 +145,5 @@
     "title": "Welcome",
     "section": "What I’m About",
     "text": "What I’m About\nI’m passionate about uncovering insights from data and turning them into clear, actionable stories.\nMy work blends statistics, visualization, and a healthy dose of curiosity.\nWhether it’s academic research or a side project on the weekend, I love building things that help optimize processes and operations."
-  },
-  {
-    "objectID": "projects/lightcast_analysis.html#salary-by-education-level",
-    "href": "projects/lightcast_analysis.html#salary-by-education-level",
-    "title": "Lightcast Job Postings Analysis",
-    "section": "",
-    "text": "The scatter plot shows the relationship between maximum years of experience and average salary for employees with a bachelor’s degree or less. We can observe a wide range of salaries for different experience levels, indicating that salary levels in this group can be significantly influenced by factors other than experience. Notably, several occupations cluster around certain salary ranges regardless of experience, suggesting that there are industry-specific salary norms.\n\n\nThe histogram for the level of bachelor’s degree or lower shows a distinct spike around the $100,000 mark, indicating the overall average salary in this group. The presence of a small number of outliers exceeding 300 thousand indicates that exceptionally high salaries in this educational group are rare.\n\n\n\n\n\nFor those with a master’s or PhD, the scatter plot shows that educational level does not necessarily correlate with higher starting salaries, as can be seen by the concentration of data points below the 100k salary mark in different years of experience. However, there is a pattern where salary generally increases with experience, though with less variability compared to those with a bachelor’s degree or lower.\n\n\nThe histogram for people with a master’s or PhD shows a more even range of salaries, with a notable peak just above $100,000. This suggests that while higher education can lead to higher earning potential, the salary spread is wider, showing the diversity of roles and industries that people with higher education can perform."
-  },
-  {
-    "objectID": "projects/lightcast_analysis.html#salary-by-remote-work-type",
-    "href": "projects/lightcast_analysis.html#salary-by-remote-work-type",
-    "title": "Lightcast Job Postings Analysis",
-    "section": "",
-    "text": "This scatter plot shows the average salary of remote workers with different lengths of service. It demonstrates a wide range of salary levels, with some salary ranges clustered around specific roles, suggesting that remote working opportunities can offer competitive salaries for a variety of positions. A notable finding is that salary does not show a consistent increase with increasing experience, suggesting that other factors may also play an important role.\n\n\nThe histogram for remote workers shows a pronounced peak around the 100k mark, indicating the overall salary level among remote positions. The distribution is quite narrow, suggesting that most remote positions are centered around this salary level, with few offering significantly higher salaries.\n\n\n\n\n\nThe scatter plot illustrates the distribution of salaries for employees in hybrid roles based on experience. Unlike fully remote positions, hybrid roles show a more even distribution of salaries across experience levels, with less concentration at the lower end of the salary range, suggesting potentially better career progression.\n\n\nThe histogram for hybrid workers shows a major concentration of salaries between 50k and 100k, with a sharp peak around 100k. This suggests that while hybrid roles are often found in this salary range, there is less variation in compensation compared to fully remote positions.\n\n\n\n\n\nThe scatter plot for on-site workers shows a rich clustering of salaries for different experience levels, suggesting that on-site jobs offer a wider range of salaries than remote and hybrid positions. The distribution shows no clear correlation between years of experience and salary level, suggesting that on-site salaries may be more dependent on job specifics or other factors.\n\n\nThe graph shows that mostly all employees work in the neighborhood of $100,000, like remote employees, but there are some higher salaries. The presence of salaries in a wider range confirms the variety of compensation that onsite roles can offer."
   }
 ]
