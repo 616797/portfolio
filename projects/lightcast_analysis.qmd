@@ -41,6 +41,7 @@ This line chart shows the fluctuations in the number of job postings in 2024 bet
 
 ![Salary Distribution by Industry](images/top10titles.svg)
 
+
 This bar chart reveals the top 10 job titles by count, indicating that Data Analyst is the most frequently posted job title by a significant margin. This might underscore the critical importance of data skills in the current job market.
 
 
