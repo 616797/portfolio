@@ -6,7 +6,7 @@ description: CoLab analysis of holiday sales at Lobsterland.
 image: images/lobsterland.jpg
 categories: [analysis, report]
 ---
-
+## Exploratory Data Analysis: Exploration & Manipulation
 ```{python}
 import pandas as pd
 import seaborn as sns
@@ -32,7 +32,7 @@ holiday_sales.info()
 
 *Boolean:* promo_discount;
 
-**Identify & Handle Missing Data**
+## Identify & Handle Missing Data
 ```{python}
 missing_values = holiday_sales.isnull().sum()
 print(missing_values)
@@ -58,7 +58,7 @@ holiday_sales['total_price'] = holiday_sales['total_price'].fillna(holiday_sales
 
 7. Apart from the 'promo_code' column, the only column with missing values is 'total_price', which is missing 1 value. This value is calculated by multiplying the number of purchased items by their unit price.
 
-**Data Checks & Adjustments**
+## Data Checks & Adjustments
 ```{python}
 holiday_sales['purchase_date'] = pd.to_datetime(holiday_sales['purchase_date'])
 ```
@@ -73,7 +73,7 @@ print(order_id_duplicates)
 
 9b. Duplicates exist in this column, because some purchases include more than 1 purchased item. After analyzing the duplicates, we can see that some orders include separate items that were bought online and in-person; some orders with duplicate ids included a Gift Card purchase, which also explains the duplication of the order ids.
 
-**Data Exploration and Analysis**
+## Data Exploration and Analysis
 ```{python}
 order_totals = holiday_sales.groupby(['order_id', 'promo_discount'])['total_price'].sum().reset_index()
 avg_order_total = order_totals.groupby('promo_discount')['total_price'].mean()
@@ -94,7 +94,7 @@ for (purchase_channel, item_category), avg_total in avg_total_spending.items():
 ```
 11. The Gift Cards category appears to have the highest average total spending for both in-person and online customers. Additionally, both groups of customers share high spending for Home Décor. Offline shoppers prefer to interact with some products in the apparel and home décor categories before purchasing, which results in higher in-person costs. Online shopping is more convenient for routine items such as toys, accessories and plushies where physical examination is not as necessary.
 
-**Data Visualization**
+## Data Visualization
 ```{python}
 import matplotlib.pyplot as plt
 

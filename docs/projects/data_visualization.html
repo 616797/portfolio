@@ -168,8 +168,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#exploratory-data-analysis-exploration-manipulation" id="toc-exploratory-data-analysis-exploration-manipulation" class="nav-link active" data-scroll-target="#exploratory-data-analysis-exploration-manipulation">Exploratory Data Analysis: Exploration &amp; Manipulation</a></li>
+  <li><a href="#identify-handle-missing-data" id="toc-identify-handle-missing-data" class="nav-link" data-scroll-target="#identify-handle-missing-data">Identify &amp; Handle Missing Data</a></li>
+  <li><a href="#data-checks-adjustments" id="toc-data-checks-adjustments" class="nav-link" data-scroll-target="#data-checks-adjustments">Data Checks &amp; Adjustments</a></li>
+  <li><a href="#data-exploration-and-analysis" id="toc-data-exploration-and-analysis" class="nav-link" data-scroll-target="#data-exploration-and-analysis">Data Exploration and Analysis</a></li>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data Visualization</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -214,11 +224,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="8dc38aaf" class="cell" data-execution_count="1">
+<section id="exploratory-data-analysis-exploration-manipulation" class="level2">
+<h2 class="anchored" data-anchor-id="exploratory-data-analysis-exploration-manipulation">Exploratory Data Analysis: Exploration &amp; Manipulation</h2>
+<div id="3197331c" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="a0cf5460" class="cell" data-execution_count="2">
+<div id="79ad2904" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>holiday_sales <span class="op">=</span> pd.read_csv(<span class="st">"lobsterland_holiday_sales_data.csv"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>holiday_sales.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
@@ -334,7 +346,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li>The head() function makes the first 5 rows of the dataset visible to the user.</li>
 </ol>
-<div id="06e0406e" class="cell" data-execution_count="3">
+<div id="88430a61" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>holiday_sales.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
@@ -366,8 +378,10 @@ memory usage: 473.8+ KB</code></pre>
 <p>3a. <em>Numeric:</em> customer_id, quantity, unit_price, total_price;</p>
 <p><em>Categorical:</em> order_id, purchase_date, item_category, item_name, payment_method, customer_type, purchase_channel, promo_code;</p>
 <p><em>Boolean:</em> promo_discount;</p>
-<p><strong>Identify &amp; Handle Missing Data</strong></p>
-<div id="1f8bc89f" class="cell" data-execution_count="4">
+</section>
+<section id="identify-handle-missing-data" class="level2">
+<h2 class="anchored" data-anchor-id="identify-handle-missing-data">Identify &amp; Handle Missing Data</h2>
+<div id="9af87e22" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>missing_values <span class="op">=</span> holiday_sales.isnull().<span class="bu">sum</span>()</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(missing_values)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -390,7 +404,7 @@ dtype: int64</code></pre>
 <ol start="4" type="1">
 <li>There are 50 missing values in the ‘total_price’ column and 3841 missing values in the ‘promo_code’ column.</li>
 </ol>
-<div id="d7a48da4" class="cell" data-execution_count="5">
+<div id="29082203" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>missing_values_percentage <span class="op">=</span> (missing_values <span class="op">/</span> <span class="bu">len</span>(holiday_sales)) <span class="op">*</span> <span class="dv">100</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(missing_values_percentage)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -421,20 +435,22 @@ Total missing values: 5.9861538461538455 %.</code></pre>
 <ol start="6" type="1">
 <li>The column ‘promo_code’ contains missing values because many customers did not use a promo code and it is not a required field in the dataset itself (unlike fields such as order_id or quantity). The reason to leave NaNs in the promo_code column is that they indicate the absence of a promo code for specific purchases, so they also have a meaning in the analysis.</li>
 </ol>
-<div id="d05b905b" class="cell" data-execution_count="6">
+<div id="66c0c999" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>holiday_sales[<span class="st">'total_price'</span>] <span class="op">=</span> holiday_sales[<span class="st">'total_price'</span>].fillna(holiday_sales[<span class="st">'quantity'</span>]<span class="op">*</span>holiday_sales[<span class="st">'unit_price'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="7" type="1">
 <li>Apart from the ‘promo_code’ column, the only column with missing values is ‘total_price’, which is missing 1 value. This value is calculated by multiplying the number of purchased items by their unit price.</li>
 </ol>
-<p><strong>Data Checks &amp; Adjustments</strong></p>
-<div id="8aa5a7fb" class="cell" data-execution_count="7">
+</section>
+<section id="data-checks-adjustments" class="level2">
+<h2 class="anchored" data-anchor-id="data-checks-adjustments">Data Checks &amp; Adjustments</h2>
+<div id="74e2cd72" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>holiday_sales[<span class="st">'purchase_date'</span>] <span class="op">=</span> pd.to_datetime(holiday_sales[<span class="st">'purchase_date'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="8" type="1">
 <li>The function above tells pandas to interpret data in the ‘purchase_date’ column as a datetime object instead of a string. This will help with filtering by date, extracting day/month/year for further analysis, and it will improve processing performance by working with objects rather than strings.</li>
 </ol>
-<div id="a8497704" class="cell" data-execution_count="8">
+<div id="a7fac484" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>order_id_duplicates <span class="op">=</span> holiday_sales[<span class="st">'order_id'</span>].duplicated().<span class="bu">sum</span>()</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(order_id_duplicates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -443,8 +459,10 @@ Total missing values: 5.9861538461538455 %.</code></pre>
 </div>
 <p>9a. There are <strong>142</strong> duplicate values in the ‘order_id’ column.</p>
 <p>9b. Duplicates exist in this column, because some purchases include more than 1 purchased item. After analyzing the duplicates, we can see that some orders include separate items that were bought online and in-person; some orders with duplicate ids included a Gift Card purchase, which also explains the duplication of the order ids.</p>
-<p><strong>Data Exploration and Analysis</strong></p>
-<div id="abbcbf11" class="cell" data-execution_count="9">
+</section>
+<section id="data-exploration-and-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="data-exploration-and-analysis">Data Exploration and Analysis</h2>
+<div id="fcadc22d" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>order_totals <span class="op">=</span> holiday_sales.groupby([<span class="st">'order_id'</span>, <span class="st">'promo_discount'</span>])[<span class="st">'total_price'</span>].<span class="bu">sum</span>().reset_index()</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>avg_order_total <span class="op">=</span> order_totals.groupby(<span class="st">'promo_discount'</span>)[<span class="st">'total_price'</span>].mean()</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Without Promo Code: $</span><span class="sc">{</span>avg_order_total[<span class="va">False</span>]<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
@@ -457,7 +475,7 @@ With Promo Code: $619.27</code></pre>
 <p>The average order total without promo code is 473.85.</p>
 <p>The average order total with promo code is 619.27.</p>
 <p>10a. It is impossible to draw conclusions about the effectiveness of promotions because of the order quantity and price per item. Some orders with promo codes may include more expensive items, while others can include multiple items.</p>
-<div id="79e217c0" class="cell" data-execution_count="10">
+<div id="7bfe94a2" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>avg_total_spending <span class="op">=</span> holiday_sales.groupby([<span class="st">'purchase_channel'</span>, <span class="st">'item_category'</span>])[<span class="st">'total_price'</span>].mean()</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Average Total Spending by Purchase Channel &amp; Item Category:"</span>)</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (purchase_channel, item_category), avg_total <span class="kw">in</span> avg_total_spending.items():</span>
@@ -481,8 +499,10 @@ Online - Toys: $526.31</code></pre>
 <ol start="11" type="1">
 <li>The Gift Cards category appears to have the highest average total spending for both in-person and online customers. Additionally, both groups of customers share high spending for Home Décor. Offline shoppers prefer to interact with some products in the apparel and home décor categories before purchasing, which results in higher in-person costs. Online shopping is more convenient for routine items such as toys, accessories and plushies where physical examination is not as necessary.</li>
 </ol>
-<p><strong>Data Visualization</strong></p>
-<div id="cbe90643" class="cell" data-execution_count="11">
+</section>
+<section id="data-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
+<div id="440917df" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>top_items <span class="op">=</span> holiday_sales.groupby(<span class="st">'item_name'</span>)[<span class="st">'quantity'</span>].<span class="bu">sum</span>().nlargest(<span class="dv">10</span>)</span>
@@ -504,7 +524,7 @@ Online - Toys: $526.31</code></pre>
 <ol start="12" type="1">
 <li>Based on the total quantity of sold items, Lobsterland’s highest-selling products are: Gift Cards worth 100 dollars and 25 dollars, as well as Limited Edition Ornaments. The lowest-selling ones appear to be Park Poster, Lobster Mug, and Lobster Plush. The main limitation here is that the graph only shows the total quantity sold but does not take into account total revenue, which means that some lower priced items may appear more frequently even though they contribute less to total sales.</li>
 </ol>
-<div id="854a1da2" class="cell" data-execution_count="12">
+<div id="4bd07c70" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>rev_category <span class="op">=</span> holiday_sales.groupby(<span class="st">'item_category'</span>)[<span class="st">"total_price"</span>].<span class="bu">sum</span>().sort_values(ascending<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">6</span>))</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>rev_category.plot(kind<span class="op">=</span><span class="st">'bar'</span>, color<span class="op">=</span><span class="st">'lightblue'</span>)</span>
@@ -524,7 +544,7 @@ Online - Toys: $526.31</code></pre>
 <ol start="13" type="1">
 <li>Gift cards generate the most revenue for Lobster Land among other categories. Accessories, Toys, and Plush bring significant revenue, but they underperform the other three, which may be due to few purchases or lower product prices.</li>
 </ol>
-<div id="550d1b5b" class="cell" data-execution_count="13">
+<div id="dcc04768" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>revenue_monthly <span class="op">=</span> holiday_sales.groupby([holiday_sales[<span class="st">'purchase_date'</span>].dt.strftime(<span class="st">'%B'</span>), <span class="st">'item_category'</span>])[<span class="st">'total_price'</span>].<span class="bu">sum</span>().reset_index()</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>months <span class="op">=</span> [<span class="st">'November'</span>,<span class="st">'December'</span>,<span class="st">'January'</span>]</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> sns.catplot(</span>
@@ -554,7 +574,7 @@ Online - Toys: $526.31</code></pre>
 <ol start="14" type="1">
 <li>The analysis shows that sales slowly decline from November through December and then drop drastically in January. This can be explained by the holiday schedule in the US: Thanksgiving is celebrated at the end of November, followed by the Black Friday sale, and Christmas comes at the end of December. Many people prefer to buy gifts in advance, which explains the high sales in November 2024 and the subsequent downturn. Gift cards show the highest returns in both November and December, supporting the assumption of holiday sales trends. It is important to note that our data only covers the first 10 days of January sales, which means we cannot yet fully analyze trends for this month.</li>
 </ol>
-<div id="8b3eab83" class="cell" data-execution_count="14">
+<div id="3b32e505" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">6</span>))</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>sns.boxplot(</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    data<span class="op">=</span>holiday_sales,</span>
@@ -581,7 +601,7 @@ Online - Toys: $526.31</code></pre>
 <ol start="15" type="1">
 <li>The graph shows that shoppers using promotions tend to have higher total spending, which indicates that discounts encourage larger purchases. Gift shoppers have the highest deviations in spending, which is likely due to high value (100) gift card purchases. Season pass holders have slightly higher median spending, possibly due to the fact that they make repeat purchases over time. Overall, spending varies widely among each group, illustrating different purchasing behaviors and patterns.</li>
 </ol>
-<div id="2b45dcbe" class="cell" data-execution_count="15">
+<div id="6d29e5d5" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>sales_volume <span class="op">=</span> holiday_sales.groupby([<span class="st">'purchase_date'</span>, <span class="st">'purchase_channel'</span>])[<span class="st">'quantity'</span>].<span class="bu">sum</span>().reset_index()</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">6</span>))</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>sns.lineplot(</span>
@@ -610,7 +630,7 @@ Online - Toys: $526.31</code></pre>
 <ol start="16" type="1">
 <li>We see that online sales consistently exceed in-person sales, with both channels having somewhat similar fluctuations. Sales peak in late November, likely due to Black Friday and holiday shopping, and then decline sharply in early January as the holiday season wraps up in December. The drop in online sales in mid-December can be attributed to delivery times, encouraging shoppers to make last-minute in-store purchases. Overall, the trends reflect seasonal shopping behavior: high holiday sales are followed by a post-holiday decline.</li>
 </ol>
-<div id="220713b7" class="cell" data-execution_count="16">
+<div id="c6c3836b" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>holiday_sales[<span class="st">'day_of_week'</span>] <span class="op">=</span> holiday_sales[<span class="st">'purchase_date'</span>].dt.day_name()</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>sales_by_day <span class="op">=</span> holiday_sales.groupby([<span class="st">'day_of_week'</span>, <span class="st">'item_category'</span>])[<span class="st">'quantity'</span>].<span class="bu">sum</span>().unstack()</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>order_days <span class="op">=</span> [<span class="st">"Monday"</span>, <span class="st">"Tuesday"</span>, <span class="st">"Wednesday"</span>, <span class="st">"Thursday"</span>, <span class="st">"Friday"</span>, <span class="st">"Saturday"</span>, <span class="st">"Sunday"</span>]</span>
@@ -635,7 +655,7 @@ Online - Toys: $526.31</code></pre>
 <ol start="17" type="1">
 <li>The highest sales of gift cards are seen on Saturdays, which makes sense since people often buy them as gifts for special occasions, which are often celebrated on weekends. On Fridays and Saturdays, high sales are seen in the apparel and home décor categories, which may be related to weekend home improvement projects. On weekdays, especially Tuesday through Thursday, sales are down in most categories due to customers being busy with work and weekenday chores.</li>
 </ol>
-<div id="585940d4" class="cell" data-execution_count="17">
+<div id="043c519a" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">6</span>))</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>sns.boxplot(</span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>    data<span class="op">=</span>holiday_sales,</span>
@@ -658,7 +678,7 @@ Online - Toys: $526.31</code></pre>
 <ol start="18" type="1">
 <li>The graph shows that total spending and median spending across all payment methods are very similar. However, there are many outliers in all payment types, which suggests that some customers make large purchases, most likely bulk orders or high-priced items. Most transactions fall within the lower range of spending, but the presence of outliers indicates occasional big purchases across all payment methods.</li>
 </ol>
-<div id="557757c2" class="cell" data-execution_count="18">
+<div id="08aadf64" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>promo_usage <span class="op">=</span> holiday_sales.groupby(<span class="st">'customer_type'</span>)[<span class="st">'promo_code'</span>].count()</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>total_purchases <span class="op">=</span> holiday_sales[<span class="st">'customer_type'</span>].value_counts()</span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>promo_usage_percent <span class="op">=</span> (promo_usage <span class="op">/</span> total_purchases) <span class="op">*</span> <span class="dv">100</span></span>
@@ -684,7 +704,7 @@ Online - Toys: $526.31</code></pre>
 <ol start="19" type="1">
 <li>We can see that season pass holders and one-time shoppers are the most likely to use promo codes, while gift shoppers are the least likely to use them. The first two groups respond well to promotions, suggesting that they are likely more aware of the deals due to marketing communications. Lobster Land has a potential to increase its client outreach by offering a discount for subscribing to the email newsletter and/or social media profiles. This procedure is quick, can be done both online and at the register, and it is cheap to implement.</li>
 </ol>
-<div id="c5964200" class="cell" data-execution_count="19">
+<div id="c6b8c806" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>price_quantity <span class="op">=</span> holiday_sales.groupby(<span class="st">'item_name'</span>).agg({<span class="st">'quantity'</span>: <span class="st">'sum'</span>, <span class="st">'unit_price'</span>: <span class="st">'mean'</span>}).reset_index()</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">6</span>))</span>
@@ -717,6 +737,7 @@ Online - Toys: $526.31</code></pre>
 </ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
